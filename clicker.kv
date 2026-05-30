@@ -45,3 +45,47 @@
         ButtonMenu:
             text: 'EXIT'
             on_press: root.exit_app()
+
+<Settings>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: "20dp"
+        spacing: "20dp"
+
+        canvas.before:
+            Color: 
+                rgba: colormap['blue']
+            Rectangle: 
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Settings"
+            font_size: "40sp"
+            size_hint: 1, 0.2
+
+        ButtonMenu:
+            text: 'GO BACK'
+            on_press: root.go_menu()
+
+<Game>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: "20dp"
+        spacing: "20dp"
+
+        canvas.before:
+            Color: 
+                rgba: colormap['blue']
+            Rectangle: 
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Game"
+            font_size: "40sp"
+            size_hint: 1, 0.2
+
+        ButtonMenu:
+            text: 'GO BACK'
+            on_press: root.go_menu()
