@@ -86,6 +86,26 @@
             font_size: "40sp"
             size_hint: 1, 0.2
 
+        Label:
+            id: level_complete
+            text: "LEVEL COMPLETE!"
+            font_size: "40sp"
+            opacity: 0
+
+        RelativeLayout:
+            Fish:
+                id: fish
+
+        Label:
+            id: click_label
+            text: f"Clicks: {root.score}"
+            font_size: "30sp"
+
         ButtonMenu:
             text: 'GO BACK'
             on_press: root.go_menu()
+
+<Fish>:
+    size_hint: None, None
+    size: 300, 300
+    pos_hint: {'center_x': 0.5}
